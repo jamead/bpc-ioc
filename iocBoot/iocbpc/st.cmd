@@ -17,8 +17,8 @@ var("PSCDebug", "5")
 # for messages coming from "device" localhost:5000
 
 
-createPSCUDP("pscudp1", "192.168.1.88", 5000, 1234)
-createPSCUDP("pscudp2", "192.168.1.89", 5000, 1235)
+createPSCUDP("pscudp1", "10.0.142.199", 5000, 1234)
+#createPSCUDP("pscudp2", "192.168.1.89", 5000, 1235)
 
 ## Load record instances
 dbLoadRecords("db/bpc.db","P=$(IOCNAME), NO=1")

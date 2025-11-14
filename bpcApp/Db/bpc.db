@@ -25,7 +25,7 @@ record(bo, "$(P){$(NO)}:send") {
 
 # writes the UDP packet to the Bipolar Power Converter
 record(stringout, "$(P){$(NO)}:speak") {
-  field(VAL, "loop")         # loop is the packet data
+  field(VAL, "Loop")         # loop is the packet data
   field(DTYP, "PSC Block")
   field(OUT , "@pscudp$(NO) 100")   # 100 is the message number
   field(FLNK, "$(P){$(NO)}:send")
